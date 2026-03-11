@@ -4,9 +4,7 @@ body {
 }
 
 h1 {
-    background-image: url(../imgs/logo.png);
-    height: 5rem;
-    background-repeat: no-repeat;
+    background-image: url(../imgs/sobre-background.jpg);
 }
 h2 {
     border-bottom: 2px groove #333;
