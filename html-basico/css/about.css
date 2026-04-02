@@ -4,11 +4,25 @@
 	--font-principal-title: "Archivo Black", sans-serif;
 	--font-secondary-title: "Roboto", sans-serif;
 	--font-secondary-title-wgt: 900;
+	--font-size-small: 0.8rem;
 
 	/*Paleta de Cores*/
 	--color-primary: #333;
 	--color-bkg-figures: #f2eded;
 	--color-border: #ccc;
+	--color-base-foote: #777;
+
+	/* Tamanhos de Imagens */
+	--logo-width: 94px;
+
+	/* Espaçamento */
+	--space-1: 8px;
+	--space-2: 16px;
+	--space-3: 32px;
+
+	/* Border-radius */
+	--border-width: 1px;
+	--border-radius: 4px;
 }
 html {
 	scroll-behavior: smooth;
@@ -53,16 +67,6 @@ figcaption {
 	margin-right: auto;
 	width: 550px;
 }
-#rodape {
-	color: #777;
-	margin: 30px 0;
-	padding: 30px 0;
-}
-#rodape img {
-	margin-right: auto;
-	vertical-align: middle;
-	width: 94px;
-}
 #farido-colorado {
 	float: right;
 	margin: 0 0 10px 10px;
@@ -77,4 +81,27 @@ p {
 a {
 	text-decoration: underline;
 	color: inherit;
+}
+
+/* Componente Rodapé */
+.footer {
+	color: var(--color-base-foote);
+	margin: var(--space-3) 0;
+	padding: var(--space-3) 0;
+	border-top: var(--border-width);
+	border-color: var(--color-border);
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-2);
+}
+
+.footer__logo {
+	width: var(--logo-width);
+}
+.footer__text {
+	font-size: var(--font-size-small);
 }
