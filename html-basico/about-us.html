@@ -1,164 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../html-basico/css/reset.css" />
+		<link rel="stylesheet" href="../html-basico/css/design-system.css" />
 		<link rel="stylesheet" href="../html-basico/css/about.css" />
-		<title>About</title>
+		<title>Sobre - Grêmio Football Porto Alegrense</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 			rel="stylesheet" />
-		<link rel="stylesheet" href="/FrontEndLabs/html-basico/css/reset.css" />
 	</head>
 
 	<body>
-		<header>
-			<nav><img src="../html-basico/imgs/download.png" alt="" /></nav>
+		<!-- Componente Header -->
+		<header class="header">
+			<nav class="header__nav">
+				<img
+					src="../html-basico/imgs/download.png"
+					alt="Logo Grêmio"
+					class="header__logo" />
+			</nav>
 		</header>
-		<main>
-			<section>
-				<h1>Grêmio FootBall Porto Alegrense</h1>
-				<p>
-					<strong>
-						<a href="#gremio"
-							>Grêmio Foot-Ball Porto Alegrense</a
-						></strong
-					>, mais conhecido como Grêmio, é um clube de futebol
-					profissional brasileiro sediado em
-					<a
-						href="https://www.google.com/maps/search/Porto%20Alegre,Brazil"
-						>Porto Alegre, no Rio Grande do Sul</a
-					>. Fundado em 15 de setembro de 1903, é considerado um dos
-					maiores e mais tradicionais clubes do Brasil e da América do
-					Sul. Suas cores são azul, preto e branco. Veja os
-					<a href="#diferenciais">diferenciais</a>
-				</p>
-				<figure id="renato-gaucho">
+
+		<!-- Componente Main -->
+		<main class="main-container">
+			<!-- Componente Hero Section -->
+			<section class="hero">
+				<div class="hero__content">
+					<h1 class="hero__title">Grêmio FootBall Porto Alegrense</h1>
+					<p class="hero__text">
+						<strong>
+							<a href="#gremio" class="link"
+								>Grêmio Foot-Ball Porto Alegrense</a
+							>
+						</strong>
+						, mais conhecido como Grêmio, é um clube de futebol
+						profissional brasileiro sediado em
+						<a
+							href="https://www.google.com/maps/search/Porto%20Alegre,Brazil"
+							class="link"
+							>Porto Alegre, no Rio Grande do Sul</a
+						>
+						. Fundado em 15 de setembro de 1903, é considerado um
+						dos maiores e mais tradicionais clubes do Brasil e da
+						América do Sul. Suas cores são azul, preto e branco.
+						Veja os
+						<a href="#diferenciais" class="link">diferenciais</a>
+					</p>
+				</div>
+			</section>
+
+			<!-- Componente Card com Imagem -->
+			<div class="card-featured">
+				<figure class="card-featured__figure">
 					<img
 						src="../html-basico/imgs/download-renato.jfif"
-						alt="Renato Gaúcho" />
-					<figcaption>Renato Gaúcho</figcaption>
+						alt="Renato Gaúcho"
+						class="card-featured__image" />
+					<figcaption class="card-featured__caption">
+						Renato Gaúcho
+					</figcaption>
 				</figure>
-				<p>
-					<strong> Renato Portaluppi</strong>, também conhecido como
-					Renato Gaúcho, é um treinador e ex-futebolista brasileiro
-					que atuava como ponta-direita.
-				</p>
-			</section>
-			<article>
-				<h2 id="personagens">Personagens</h2>
-				<figure id="farido-colorado">
-					<img
-						src="../html-basico/imgs/farido_colorado.jfif"
-						alt="Farido Colorado" />
-					<figcaption>Farido Colorado</figcaption>
-				</figure>
-				<p>
-					Jornalista identificado com o Grêmio, Farid Germano Filho
-					provocou o Internacional após a final do Gauchão de 2026. O
-					influenciador colocou um vestido de valsa em alusão aos 15
-					anos sem um título de expressão do Colorado.
-				</p>
-				<p>
-					Jornalista identificado com o Grêmio, Farid Germano Filho
-					provocou o Internacional após a final do Gauchão de 2026. O
-					influenciador colocou um vestido de valsa em alusão aos 15
-					anos sem um título de expressão do Colorado.
-				</p>
-				<p>
-					Jornalista identificado com o Grêmio, Farid Germano Filho
-					provocou o Internacional após a final do Gauchão de 2026. O
-					influenciador colocou um vestido de valsa em alusão aos 15
-					anos sem um título de expressão do Colorado.
-				</p>
-				<p>
-					Jornalista identificado com o Grêmio, Farid Germano Filho
-					provocou o Internacional após a final do Gauchão de 2026. O
-					influenciador colocou um vestido de valsa em alusão aos 15
-					anos sem um título de expressão do Colorado.
-				</p>
-				<figure id="gremio">
+				<div class="card-featured__content">
+					<p class="card-featured__text">
+						<strong>Renato Portaluppi</strong>, também conhecido
+						como Renato Gaúcho, é um treinador e ex-futebolista
+						brasileiro que atuava como ponta-direita.
+					</p>
+				</div>
+			</div>
+
+			<!-- Componente Section com Articles -->
+			<section class="content-section">
+				<h2 class="content-section__title" id="personagens">
+					Personagens
+				</h2>
+
+				<!-- Componente Article Card -->
+				<article class="article-card">
+					<figure
+						class="article-card__figure article-card__figure--right">
+						<img
+							src="../html-basico/imgs/farido_colorado.jfif"
+							alt="Farido Colorado"
+							class="article-card__image" />
+						<figcaption class="article-card__caption">
+							Farido Colorado
+						</figcaption>
+					</figure>
+					<div class="article-card__content">
+						<p class="article-card__text">
+							Jornalista identificado com o Grêmio, Farid Germano
+							Filho provocou o Internacional após a final do
+							Gauchão de 2026. O influenciador colocou um vestido
+							de valsa em alusão aos 15 anos sem um título de
+							expressão do Colorado.
+						</p>
+						<p class="article-card__text">
+							Jornalista identificado com o Grêmio, Farid Germano
+							Filho provocou o Internacional após a final do
+							Gauchão de 2026. O influenciador colocou um vestido
+							de valsa em alusão aos 15 anos sem um título de
+							expressão do Colorado.
+						</p>
+						<p class="article-card__text">
+							Jornalista identificado com o Grêmio, Farid Germano
+							Filho provocou o Internacional após a final do
+							Gauchão de 2026. O influenciador colocou um vestido
+							de valsa em alusão aos 15 anos sem um título de
+							expressão do Colorado.
+						</p>
+						<p class="article-card__text">
+							Jornalista identificado com o Grêmio, Farid Germano
+							Filho provocou o Internacional após a final do
+							Gauchão de 2026. O influenciador colocou um vestido
+							de valsa em alusão aos 15 anos sem um título de
+							expressão do Colorado.
+						</p>
+					</div>
+				</article>
+
+				<!-- Componente Featured Figure -->
+				<figure class="featured-figure">
 					<img
 						src="../html-basico/imgs/download.png"
-						alt="Grêmio Foot-Ball Porto Alegrense" />
-					<figcaption>Grêmio Foot-Ball Porto Alegrense</figcaption>
+						alt="Grêmio Foot-Ball Porto Alegrense"
+						class="featured-figure__image" />
+					<figcaption class="featured-figure__caption">
+						Grêmio Foot-Ball Porto Alegrense
+					</figcaption>
 				</figure>
-				<p>
-					Foi o primeiro clube fora da região Sudeste a conquistar
-					títulos de dimensão continental e mundial, sendo
-					<em>
-						<strong>
-							campeão da América e do Mundo em 1983</strong
-						></em
-					>, derrotando Peñarol e Hamburgo nas finais.
-				</p>
-				<p>
-					Também é bicampeão da Recopa Sul-Americana, tendo
-					conquistado este torneio em todas as vezes em que o
-					disputou. Conquistou ainda 2 Campeonatos Brasileiros da
-					Série A, 1 Campeonato Brasileiro da Série B, 5 Copas do
-					Brasil[10] e 1 Supercopa do Brasil, além de 1 Copa Sul e 1
-					Campeonato Sul-Brasileiro. No âmbito estadual, já foi
-					campeão 44 vezes do Campeonato Gaúcho, 4 vezes da Recopa
-					Gaúcha e 1 vez da Copa FGF.[11] O clube ocupa, em 2025, a
-					décima segunda colocação no ranking da CBF[12] e a décima
-					quarta colocação no Ranking CONMEBOL.[13]
-				</p>
-				<p>
-					Além do time profissional de futebol masculino, o clube
-					conta com categorias de base masculinas do sub-8 ao
-					sub-20,[14] uma equipe de transição e uma equipe
-					feminina.[15] O clube já revelou vários futebolistas de
-					renome internacional ao longo de sua história, como Arthur,
-					Everton, Emerson, Lucas Leiva, Douglas Costa, Renato
-					Portaluppi, Anderson, Ânderson Polga e Ronaldinho
-					Gaúcho.[16][17] No desempenho financeiro, o Grêmio registrou
-					superávit em seus balanços financeiros de 2016 a 2020, após
-					ter apresentado déficits entre 2013 e 2015.[18] Em 2020, as
-					receitas superaram as despesas em trinta e oito milhões de
-					reais. O endividamento diminuiu de 429 milhões de reais em
-					2019 para 396 milhões no ano seguinte.[18] O faturamento
-					cresceu entre 2015 e 2019, enquanto o endividamento diminuiu
-					no mesmo período.[19] A dívida de curto prazo do clube
-					somava sessenta milhões de reais em setembro de 2020.[20]
-				</p>
-				<p>
-					O Grêmio é um dos clubes de futebol mais populares do
-					Brasil, com uma torcida estimada em mais de oito milhões de
-					pessoas no país.[21] Conforme pesquisa por amostra realizada
-					pelo Datafolha em agosto de 2019, 4% da população brasileira
-					torce para o Grêmio, que tem a quinta maior torcida do país,
-					empatado com Vasco e Cruzeiro.[22] De acordo com pesquisa
-					realizada em 2021 pela empresa DataTempo, o clube possui
-					quase o dobro de torcedores que seu rival.
-				</p>
-			</article>
-			<article>
-				<h2 id="diferenciais">Diferenciais</h2>
-				<ul>
-					<li>Maior do Sul</li>
-					<li>Imortal que mais morre</li>
-					<li>A cada 10 gaúchos 7 são Gremistas</li>
-					<li>Saúde aos inteligentes meu desprezo aos burros</li>
-					<li>Reverência, Reverência, Reverência</li>
-					<li><a href="../html-basico/index.html">Nossa loja</a></li>
-					<li><a href="mailto:loja@loja.com">E-mail</a></li>
-					<li><a href="tel:=5535997999999">Telefone</a></li>
-				</ul>
-			</article>
-		</main>
-		<!-- Componente Rodapé -->
-		<footer>
-			<div class="footer">
-				<div class="footer__container">
-					<img
-						src="../html-basico/imgs/logo.png"
-						alt=""
-						class="footer__logo" />
-					<p class="footer__text">&copy; Copyright Mirror Fashion</p>
+
+				<!-- Componente Text Block -->
+				<div class="text-block">
+					<p class="text-block__paragraph">
+						Foi o primeiro clube fora da região Sudeste a conquistar
+						títulos de dimensão continental e mundial, sendo
+						<em>
+							<strong
+								>campeão da América e do Mundo em 1983</strong
+							>
+						</em>
+						, derrotando Peñarol e Hamburgo nas finais.
+					</p>
+					<p class="text-block__paragraph">
+						Também é bicampeão da Recopa Sul-Americana, tendo
+						conquistado este torneio em todas as vezes em que o
+						disputou. Conquistou ainda 2 Campeonatos Brasileiros da
+						Série A, 1 Campeonato Brasileiro da Série B, 5 Copas do
+						Brasil[10] e 1 Supercopa do Brasil, além de 1 Copa Sul e
+						1 Campeonato Sul-Brasileiro. No âmbito estadual, já foi
+						campeão 44 vezes do Campeonato Gaúcho, 4 vezes da Recopa
+						Gaúcha e 1 vez da Copa FGF.[11] O clube ocupa, em 2025,
+						a décima segunda colocação no ranking da CBF[12] e a
+						décima quarta colocação no Ranking CONMEBOL.[13]
+					</p>
+					<p class="text-block__paragraph">
+						Além do time profissional de futebol masculino, o clube
+						conta com categorias de base masculinas do sub-8 ao
+						sub-20,[14] uma equipe de transição e uma equipe
+						feminina.[15] O clube já revelou vários futebolistas de
+						renome internacional ao longo de sua história, como
+						Arthur, Everton, Emerson, Lucas Leiva, Douglas Costa,
+						Renato Portaluppi, Anderson, Ânderson Polga e Ronaldinho
+						Gaúcho.[16][17] No desempenho financeiro, o Grêmio
+						registrou superávit em seus balanços financeiros de 2016
+						a 2020, após ter apresentado déficits entre 2013 e
+						2015.[18] Em 2020, as receitas superaram as despesas em
+						trinta e oito milhões de reais. O endividamento diminuiu
+						de 429 milhões de reais em 2019 para 396 milhões no ano
+						seguinte.[18] O faturamento cresceu entre 2015 e 2019,
+						enquanto o endividamento diminuiu no mesmo período.[19]
+						A dívida de curto prazo do clube somava sessenta milhões
+						de reais em setembro de 2020.[20]
+					</p>
+					<p class="text-block__paragraph">
+						O Grêmio é um dos clubes de futebol mais populares do
+						Brasil, com uma torcida estimada em mais de oito milhões
+						de pessoas no país.[21] Conforme pesquisa por amostra
+						realizada pelo Datafolha em agosto de 2019, 4% da
+						população brasileira torce para o Grêmio, que tem a
+						quinta maior torcida do país, empatado com Vasco e
+						Cruzeiro.[22] De acordo com pesquisa realizada em 2021
+						pela empresa DataTempo, o clube possui quase o dobro de
+						torcedores que seu rival.
+					</p>
 				</div>
+			</section>
+
+			<!-- Componente List Section -->
+			<section class="content-section">
+				<h2 class="content-section__title" id="diferenciais">
+					Diferenciais
+				</h2>
+				<ul class="list-component">
+					<li class="list-component__item">Maior do Sul</li>
+					<li class="list-component__item">Imortal que mais morre</li>
+					<li class="list-component__item">
+						A cada 10 gaúchos 7 são Gremistas
+					</li>
+					<li class="list-component__item">
+						Saúde aos inteligentes meu desprezo aos burros
+					</li>
+					<li class="list-component__item">
+						Reverência, Reverência, Reverência
+					</li>
+					<li class="list-component__item">
+						<a href="../html-basico/index.html" class="link"
+							>Nossa loja</a
+						>
+					</li>
+					<li class="list-component__item">
+						<a href="mailto:loja@loja.com" class="link">E-mail</a>
+					</li>
+					<li class="list-component__item">
+						<a href="tel:=5535997999999" class="link">Telefone</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<!-- Componente Rodapé (Design System Pattern) -->
+		<footer class="footer">
+			<div class="footer__container">
+				<img
+					src="../html-basico/imgs/logo.png"
+					alt="Logo"
+					class="footer__logo" />
+				<p class="footer__text">&copy; Copyright Mirror Fashion</p>
 			</div>
 		</footer>
 	</body>
