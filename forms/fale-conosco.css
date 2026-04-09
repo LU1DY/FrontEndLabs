@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	font-size: 62.5%;
+	font-family: "Boldonse", system-ui;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+main {
+	label {
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: #383939;
+	}
+	.container {
+		width: 67rem;
+		height: auto;
+		padding: 2rem 2.5rem;
+		background-color: #e3f0f0;
+		border-radius: 0.5rem;
+		box-shadow: 0px 4px 4px #888;
+		.header__form {
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 2rem;
+			}
+			p {
+				font-size: 1.4rem;
+				font-weight: 600;
+				margin-bottom: 1.5rem;
+			}
+		}
+		.inputs-container {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+			.div__input {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				input {
+					font-family: "Boldonse", system-ui !important;
+					padding: 0.8rem 1.2rem;
+					font-size: 1.1rem;
+					border: 1px solid #ccc;
+					border-radius: 0.3rem;
+					font-weight: 600;
+					width: 65%;
+					color: #888;
+				}
+			}
+			.div__select {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				select {
+					padding: 0.8rem 1.2rem;
+					font-size: 1.6rem;
+					border: 1px solid #ccc;
+					border-radius: 0.3rem;
+					font-weight: 600;
+					width: 65%;
+					background-color: #fff;
+					color: #757587;
+					option {
+						color: #606064;
+					}
+				}
+			}
+			.div__textarea {
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+				textarea {
+					font-family: "Boldonse", system-ui !important;
+					padding: 0.8rem 1.2rem;
+					font-size: 1.1rem;
+					border: 1px solid #ccc;
+					border-radius: 0.3rem;
+					font-weight: 600;
+					width: 65%;
+					background-color: #fff;
+					color: #757587;
+				}
+			}
+			.div__btns {
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				gap: 1.5rem;
+				button {
+					font-family: "Boldonse", system-ui !important;
+					padding: 0.8rem 1.2rem;
+					border-radius: 0.3rem;
+					font-weight: 600;
+					font-size: 1rem;
+					border: none;
+				}
+				.btn__limpar {
+					background-color: #ccc;
+					color: #383939;
+				}
+				.btn__enviar {
+					background-color: #35009e;
+					color: #fff;
+				}
+			}
+		}
+		h2 {
+			font-size: 1.2rem;
+			color: #383939;
+			text-align: center;
+		}
+	}
+}
