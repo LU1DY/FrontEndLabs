@@ -62,8 +62,10 @@ main {
 				align-items: center;
 				justify-content: space-between;
 				select {
+					font-family: "Boldonse", system-ui !important;
+
 					padding: 0.8rem 1.2rem;
-					font-size: 1.6rem;
+					font-size: 1.1rem;
 					border: 1px solid #ccc;
 					border-radius: 0.3rem;
 					font-weight: 600;
@@ -71,6 +73,7 @@ main {
 					background-color: #fff;
 					color: #757587;
 					option {
+
 						color: #606064;
 					}
 				}
